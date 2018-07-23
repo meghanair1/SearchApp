@@ -66,6 +66,7 @@ def login():
 def logout():
   session.pop('email', None)
   return redirect(url_for('index'))
+# this is home page
 
 @app.route("/home", methods=["GET", "POST"])
 def home():
